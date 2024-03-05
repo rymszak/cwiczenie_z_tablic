@@ -13,7 +13,7 @@ add.addEventListener('click', function(evt){
     tab.push(dane)
     console.log(tab)
 })
-const see=document.getElementById(see)
+const see=document.getElementById('see')
 see.addEventListener('click', function(ev){
     ev.preventDefault()
     const adult=document.getElementById('adult')
@@ -22,7 +22,13 @@ see.addEventListener('click', function(ev){
     const display=document.getElementById('dis')
     if(adult.checked){
     tab.forEach(element => {
-        display.innerHTML+= element+"<br>"
+        if(element.wiek>=18){
+        display.innerHTML+=`imie ${element.imie} wiek: ${element.wiek} miasto: ${element.miasto}`+"<br>"}
     });
+    }
+    if(ice.checked){
+        tab.forEach(elem => {
+            if(elem.miasto="ice")
+        })
     }
 })
