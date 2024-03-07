@@ -1,0 +1,17 @@
+p{display: flex;
+    justify-content: space-evenly;
+}
+fieldset {
+    width: 40%;
+    display: flex;
+    display: block;
+    justify-content: space-evenly;
+    margin-left: 25%;
+    
+}
+#add{
+   margin-left: 50%;
+}
+#age{
+    width: 20%;
+}

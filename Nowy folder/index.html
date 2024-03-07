@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container align-center shadow d-flex flex-wrap bg-body-tertiary rounded w-50">
+    
+        
+            <fieldset class=" border border-secondary  p-3 mt-5 w-100 ">
+           <form>  
+               <main class="row w-100">
+               <div class="form-group col">
+                   <label for="name">Imie: </label>
+                   <input type="text" id="name" class="form-control">
+               </div>
+
+               <div class="form-group col">
+                <label for="city">Miasto: </label>
+                <input type="text" id="city" class="form-control">
+            </div>
+            
+            <div class="form-group col">
+                <label for="age">Wiek: </label>
+                <input type="number" id="age" class="form-control w-50">
+            </div>
+
+            <div class="d-flex justify-content-center row-1 m-3">
+            <button type="button" id="add" class="btn btn-outline-success ms-5 ">DODAJ</button>
+        </div>
+        <hr>
+
+       <p>  <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Lista urzytkowników
+            </button>
+          </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <ol class="list-group list-group-numbered" id="user_list">
+                    
+                  </ol> <div class="accordion-body">
+            </div>
+            </p>
+</main></fieldset>
+<fieldset class=" border border-secondary  p-3 mt-5 w-100 mb-3">
+    </form >
+    <form class=" row ">
+        <div class="form-group col ms-3">
+            <label for="search">szukana wartość: </label>
+            <input type="text" id="search" class="form-control w-50">
+        </div>
+       
+        <div class="col ms-3">
+        <label for="select ">kryterium wyszukiwania</label>
+        <select class="form-select w-50" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One </option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+            </div>
+
+        </p>
+    </form></fieldset></div>
+</body>
+</html>
