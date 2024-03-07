@@ -13,12 +13,17 @@ add.addEventListener('click', function(evt){
     tab.push(dane)
     console.log(tab)
     const user_list=document.getElementById('user_list')
+    user_list.innerHTML=""
     tab.forEach(elem => {
         user_list.innerHTML+=`<li class="list-group-item"><strong>${elem.imie}</strong> lat <strong>${elem.wiek} </strong>z miasta <strong> ${elem.miasto} </strong><button type="button" id="del" class="btn btn-outline-danger">X</button></li>`
-
     });
     })
 
+    const del=document.getElementById('del')
+    del.addEventListener('click',function(ev){
+        ev.preventDefault()
+        tab.pop(this)
+    })
 // const see=document.getElementById('see')
 // see.addEventListener('click', function(ev){
 //     ev.preventDefault()
